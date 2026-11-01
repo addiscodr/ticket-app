@@ -36,6 +36,7 @@ class TicketView extends StatelessWidget {
                     children: [
                       Text(
                         "NBI",
+                        textAlign: TextAlign.start,
                         style: AppStyles.headLineStyle3.copyWith(
                           color: Colors.white,
                         ),
@@ -77,21 +78,23 @@ class TicketView extends StatelessWidget {
                     children: [
                       Text(
                         "NAIROBI",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        textAlign: TextAlign.start,
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
                       Expanded(child: Container()),
                       Text(
                         "10H 45M",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
                       Expanded(child: Container()),
                       Text(
                         "ADDIS ABABA",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        textAlign: TextAlign.end,
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
@@ -157,21 +160,23 @@ class TicketView extends StatelessWidget {
                     children: [
                       Text(
                         "Date",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        textAlign: TextAlign.start,
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
                       Expanded(child: Container()),
                       Text(
                         "Departure time",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
                       Expanded(child: Container()),
                       Text(
                         "No.",
-                        style: AppStyles.headLineStyle3.copyWith(
+                        textAlign: TextAlign.end,
+                        style: AppStyles.headLineStyle4.copyWith(
                           color: Colors.white,
                         ),
                       ),
