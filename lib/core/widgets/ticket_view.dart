@@ -3,6 +3,8 @@ import 'package:ticket_app/core/res/styles/app_styles.dart';
 import 'package:ticket_app/core/widgets/app_layoutbuilder_widget.dart';
 import 'package:ticket_app/core/widgets/big_circle.dart';
 import 'package:ticket_app/core/widgets/big_dot.dart';
+import 'package:ticket_app/core/widgets/text_style_fourth.dart';
+import 'package:ticket_app/core/widgets/text_style_third.dart';
 
 class TicketView extends StatelessWidget {
   const TicketView({super.key});
@@ -34,13 +36,7 @@ class TicketView extends StatelessWidget {
                   // Show departure and destination with icons first line
                   Row(
                     children: [
-                      Text(
-                        "NBI",
-                        textAlign: TextAlign.start,
-                        style: AppStyles.headLineStyle3.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleThird(text: "NBI"),
                       Expanded(child: Container()),
                       const BigDot(),
                       Expanded(
@@ -64,40 +60,18 @@ class TicketView extends StatelessWidget {
                       ),
                       const BigDot(),
                       Expanded(child: Container()),
-                      Text(
-                        "ADD",
-                        style: AppStyles.headLineStyle3.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleThird(text: "ADD"),
                     ],
                   ),
                   const SizedBox(height: 3),
                   // Show departure and destination names with time
                   Row(
                     children: [
-                      Text(
-                        "NAIROBI",
-                        textAlign: TextAlign.start,
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleFourth(text: "NAIROBI"),
                       Expanded(child: Container()),
-                      Text(
-                        "10H 45M",
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleFourth(text: "02H 15M"),
                       Expanded(child: Container()),
-                      Text(
-                        "ADDIS ABABA",
-                        textAlign: TextAlign.end,
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleFourth(text: "ADDIS ABABA"),
                     ],
                   ),
                 ],
@@ -131,55 +105,26 @@ class TicketView extends StatelessWidget {
                   // Show departure and destination with icons first line
                   Row(
                     children: [
-                      Text(
-                        "1 May",
-                        style: AppStyles.headLineStyle3.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleThird(text: "1 MAY"),
                       Expanded(child: Container()),
 
-                      Text(
-                        "08:00 AM",
-                        style: AppStyles.headLineStyle3.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleThird(text: "08:00 AM"),
                       Expanded(child: Container()),
-                      Text(
-                        "23",
-                        style: AppStyles.headLineStyle3.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleThird(text: "23"),
                     ],
                   ),
                   const SizedBox(height: 3),
                   // Show departure and destination names with time
                   Row(
                     children: [
-                      Text(
-                        "Date",
-                        textAlign: TextAlign.start,
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
+                      const TextStyleFourth(text: "DATE"),
+                      Expanded(child: Container()),
+                      const TextStyleFourth(
+                        text: "DEPARTURE TIME",
+                        
                       ),
                       Expanded(child: Container()),
-                      Text(
-                        "Departure time",
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
-                      Expanded(child: Container()),
-                      Text(
-                        "No.",
-                        textAlign: TextAlign.end,
-                        style: AppStyles.headLineStyle4.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      const TextStyleFourth(text: "NO."),
                     ],
                   ),
                 ],
